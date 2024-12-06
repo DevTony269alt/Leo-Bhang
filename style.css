@@ -12,20 +12,11 @@ body {
     padding-left: 135px;
 }
 
-.chocolate {
-    width: 10px;
-}
-
 .container img {
     width: 180px;
     border-radius: 10px;
     margin-left: 140px;
     float: left;
-}
-
-.basic-info h2 {
-    font-size: 40px;
-    padding: 20px;
 }
 
 .intro {
@@ -51,31 +42,330 @@ hr {
     border-color: black;
 }
 
-.basic-info li {
-    font-size: 15px;
-    padding-left: 20px;
+
+.footer {
+    background-color: #232433;
+    /* Dark background */
+    color: white;
+    /* White text */
+    padding: 20px 0;
+    /* Padding for top and bottom */
+    text-align: center;
+    /* Center text */
+    position: relative;
+    /* Relative positioning */
+    bottom: 0;
+    /* Align to the bottom */
+    width: 100%;
+    /* Full width */
+    border-radius: 10px;
 }
 
-.basic-info {
-    padding-left: 5%;
+.footer-content {
+    max-width: 800px;
+    /* Max width for content */
+    margin: 0 auto;
+    /* Center the content */
+    padding: 0 20px;
+    /* Padding for left and right */
 }
 
-.fun-facts {
-    padding-left: 5%;
+.footer h3 {
+    font-size: 24px;
+    /* Heading size */
+    margin-bottom: 10px;
+    /* Space below heading */
 }
 
-.fun-facts li {
-    font-size: 15px;
-    padding-left: 20px;
+.footer p {
+    margin: 10px 0;
+    /* Space around paragraphs */
 }
 
-.fun-facts h2 {
-    font-size: 40px;
-    padding: 20px;
+.footer-bottom {
+    margin-top: 20px;
+    /* Space above copyright */
+    font-size: 14px;
+    /* Smaller font size for copyright */
 }
 
 .basic-info,
 .fun-facts {
-    margin: 0 20px;
-    /* Add some margin between the two sections */
+    padding: 50px;
+    /* Add padding around the sections */
+    background-color: #cff9ff;
+    /* Light background for contrast */
+    border-radius: 5px;
+    /* Rounded corners */
+    margin: 10px 0;
+    /* Space between sections */
+}
+
+.basic-info h2,
+.fun-facts h2 {
+    font-size: 24px;
+    /* Responsive font size for headings */
+    margin-bottom: 10px;
+    /* Space below headings */
+}
+
+.basic-info ul,
+.fun-facts ol {
+    list-style-position: inside;
+    /* Better alignment of bullets/numbers */
+    padding-left: 0;
+    /* Remove default padding */
+}
+
+.basic-info li,
+.fun-facts li {
+    font-size: 18px;
+    /* Responsive font size for list items */
+    padding: 5px 0;
+    /* Space between list items */
+    line-height: 1.5;
+    /* Increase line height for readability */
+}
+
+@media (max-width: 459px) {
+    body {
+        background-color: aliceblue;
+    }
+
+    .container img {
+        margin-top: 25px;
+        width: 100px;
+        border-radius: 10px;
+        margin-left: 30px;
+        float: left;
+    }
+
+    .container h2 {
+        font-size: 13px;
+        padding-left: 0;
+        /* Remove left padding for centering */
+        padding-top: 30px;
+        /* Add some margin to the top and bottom */
+        padding-bottom: 30px;
+    }
+
+    .container h1 {
+        padding-top: 0px;
+        /* Reduce padding to bring it closer */
+        font-size: 25px;
+        padding-bottom: 2px;
+    }
+
+    .container p {
+        padding-bottom: 40px;
+        text-align: center;
+    }
+
+    .chocolate {
+        display: block;
+        /* Allow it to behave like a block element */
+        text-align: center;
+        /* Center the text */
+        margin: 0 auto;
+        /* Center the link horizontally */
+    }
+
+    .basic-info h2,
+    .fun-facts h2 {
+        font-size: 18px;
+        /* Smaller heading size for mobile */
+    }
+
+    .basic-info li,
+    .fun-facts li {
+        font-size: 14px;
+        /* Smaller list item size for mobile */
+    }
+
+    .intro {
+        font-size: 15px;
+    }
+}
+
+
+/*mobile*/
+
+@media (min-width: 460px) and (max-width: 800px) {
+    body {
+        background-color: aliceblue;
+    }
+
+    .container img {
+        margin-top: 25px;
+        width: 140px;
+        border-radius: 10px;
+        margin-left: 30px;
+        float: left;
+    }
+
+    .container h2 {
+        font-size: 23px;
+        padding-left: 0;
+        /* Remove left padding for centering */
+        padding-top: 30px;
+        /* Add some margin to the top and bottom */
+    }
+
+    .container h1 {
+        padding-top: 0px;
+        /* Reduce padding to bring it closer */
+        font-size: 45px;
+        padding-bottom: 2px;
+    }
+
+    .container p {
+        padding-bottom: 50px;
+        text-align: center;
+    }
+
+    .chocolate {
+        display: block;
+        /* Allow it to behave like a block element */
+        text-align: center;
+        /* Center the text */
+        margin: 0 auto;
+        /* Center the link horizontally */
+    }
+
+    .basic-info h2,
+    .fun-facts h2 {
+        font-size: 20px;
+        /* Smaller heading size for mobile */
+    }
+
+    .basic-info li,
+    .fun-facts li {
+        font-size: 16px;
+        /* Smaller list item size for mobile */
+    }
+
+    .intro {
+        font-size: 25px;
+    }
+}
+
+@media (min-width: 801px) and (max-width: 1100px) {
+    body {
+        background-color: aliceblue;
+    }
+
+    .container img {
+        width: 160px;
+        border-radius: 10px;
+        margin-left: 30px;
+        margin-top: 30px;
+        float: left;
+    }
+
+    .container h2 {
+        font-size: 30px;
+        padding-left: 0;
+        /* Remove left padding for centering */
+        margin-top: 10px;
+        padding-top: 45px;
+        /* Add some margin to the top and bottom */
+    }
+
+    .container h1 {
+        padding-top: 0px;
+        /* Reduce padding to bring it closer */
+        font-size: 55px;
+        padding-bottom: 20px;
+    }
+
+    .container p {
+        padding-bottom: 30px;
+        text-align: center;
+    }
+
+    .chocolate {
+        display: block;
+        /* Allow it to behave like a block element */
+        text-align: center;
+        /* Center the text */
+        margin: 0 auto;
+        /* Center the link horizontally */
+    }
+
+    .basic-info h2,
+    .fun-facts h2 {
+        font-size: 25px;
+        /* Smaller heading size for mobile */
+    }
+
+    .basic-info li,
+    .fun-facts li {
+        font-size: 20px;
+        /* Smaller list item size for mobile */
+    }
+
+    .intro {
+        font-size: 30px;
+    }
+
+}
+
+@media (min-width: 1101px) {
+    body {
+        background-color: aliceblue;
+    }
+
+    .container img {
+        width: 200px;
+        border-radius: 10px;
+        margin-left: 30px;
+        margin-top: 30px;
+        float: left;
+    }
+
+    .container h2 {
+        font-size: 35px;
+        padding-left: 0;
+        /* Remove left padding for centering */
+        margin-top: 10px;
+        padding-top: 60px;
+        /* Add some margin to the top and bottom */
+    }
+
+    .container h1 {
+        padding-top: 0px;
+        /* Reduce padding to bring it closer */
+        font-size: 65px;
+        padding-bottom: 10px;
+    }
+
+    .container p {
+        padding-bottom: 30px;
+        text-align: center;
+    }
+
+    .chocolate {
+        display: block;
+        /* Allow it to behave like a block element */
+        text-align: center;
+        /* Center the text */
+        margin: 0 auto;
+        /* Center the link horizontally */
+    }
+
+    .basic-info h2,
+    .fun-facts h2 {
+        font-size: 30px;
+        /* Smaller heading size for mobile */
+    }
+
+    .basic-info li,
+    .fun-facts li {
+        font-size: 25px;
+        /* Smaller list item size for mobile */
+    }
+
+    .intro {
+        font-size: 45px;
+    }
 }
